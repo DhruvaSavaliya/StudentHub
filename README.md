@@ -1,30 +1,41 @@
-# StudentHub Portal
+**README.md**
+**Project Overview**
+StudentHub is a web-based student portal developed as a semester project. The portal provides a central platform where students can access academic information such as assignments, attendance, timetables, events, and personal profiles. It also includes an admin module to manage students, faculty, courses, events, and reports.
 
-## Objective
+**Objectives**
+Provide a centralized student portal.
+Improve communication between students and the institution.
+Simplify access to academic resources.
+Enable administrators to manage portal data efficiently.
+Create a responsive and user-friendly interface using HTML5.
 
-This project is developed as a Web Development Lab project.
+**Features**
+Student Module
+Student Registration
+Student Login
+Dashboard
+Profile Management
+Attendance
+Timetable
+Assignments
+Events
+Feedback
+Logout
+Admin Module
+Admin Login
+Admin Dashboard
+Manage Students
+Manage Faculty
+Manage Courses
+Manage Events
+View Feedback
+Generate Reports
+Logout
 
-## Technologies
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Project Pages
-
-1. Home
-2. Login
-3. Register
-4. Dashboard
-5. Attendance
-6. Assignment
-7. Timetable
-8. Notice
-9. Profile
-10. Contact
-
-## Author
-
-Student Name
-
-Enrollment Number
+**Technologies Used**
+HTML5
+CSS3
+JavaScript
+Visual Studio Code
+Git & GitHub
+draw.io (Sitemap & Diagrams)
