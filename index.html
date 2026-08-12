@@ -1,118 +1,448 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StudentHub - Home</title>
-
+    <title>StudentHub | Home</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<center>
-<header>
-    <img src="images/logo.jpg" alt="StudentHub Logo" width="90">
-    <h1>StudentHub</h1>
-    <p>Your Digital Campus Portal</p>
-</header>
-</center>
-<hr>
 
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="dashboard.html">Dashboard</a></li>
-        <li><a href="profile.html">Profile</a></li>
-        <li><a href="attendance.html">Attendance</a></li>
-        <li><a href="timetable.html">Timetable</a></li>
-        <li><a href="assignment.html">Assignment</a></li>
-        <li><a href="notice.html">Notice</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-</nav>
+    <!-- ================= HEADER ================= -->
+    <header class="navbar">
 
-<hr>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
 
-<center>
-    <h2>Welcome to StudentHub</h2>
-</center>
+        <!-- Hamburger Menu -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+            ☰
+        </button>
 
-<img src="images/charusat.png"
-     alt="StudentHub Banner"
-     style="display:block;
-            margin:20px auto;
-            width:90%;
-            max-width:1200px;
-            height:auto;
-            border-radius:10px;">
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html" class="active">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<section>
-    <h2>About StudentHub</h2>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="register.html" class="btn btn-primary">Register</a>
 
-    <p>
-        StudentHub is a comprehensive digital campus portal designed to simplify
-        academic management for students. It provides easy access to attendance,
-        assignments, timetables, notices, and profile information through a
-        single platform. StudentHub helps students stay organized, informed,
-        and connected throughout their academic journey.
-    </p>
-</section>
+            <!-- Theme Switcher -->
+            <button id="themeToggle" class="theme-btn" title="Toggle Theme">
+                🌙
+            </button>
+        </div>
 
-<hr>
+    </header>
 
-<section>
-    <h2>Upcoming Workshop</h2>
 
-    <h3>Web Development Workshop 2026</h3>
+    <!-- ================= NOTIFICATION BANNER ================= -->
+    <div class="notification" id="notification">
+        <span>
+            📢 Important: Hackathon 2026 registration is now open!
+        </span>
 
-    <p>
-        Learn the fundamentals of HTML, CSS, JavaScript, and modern web
-        development techniques. The workshop includes hands-on sessions,
-        project demonstrations, and expert guidance from faculty members.
-    </p>
+        <button id="closeNotification" aria-label="Close notification">
+            &times;
+        </button>
+    </div>
 
-    <p>
-        <strong>Date:</strong> 15 August 2026 <br>
-        <strong>Venue:</strong> CSPIT Seminar Hall <br>
-        <strong>Time:</strong> 10:00 AM - 1:00 PM
-    </p>
-</section>
 
-<hr>
+    <main>
 
-<section>
-    <h2>Quick Links</h2>
+        <!-- ================= HERO ================= -->
+        <section class="hero-card">
 
-    <ul>
-        <li><a href="#">Library Portal</a></li>
-        <li><a href="#">Examination Portal</a></li>
-        <li><a href="#">Academic Calendar</a></li>
-        <li><a href="#">Course Materials</a></li>
-        <li><a href="#">ERP login</a></li>
-    </ul>
-</section>
+            <!-- IMAGE SLIDER -->
+            <div class="hero-image slider">
 
-<hr>
+                <img id="sliderImage"
+                     src="images/charusat.png"
+                     alt="StudentHub Banner">
 
-<section>
-    <h2>Latest Notices</h2>
+                <button class="slider-btn prev" id="prevSlide"
+                        aria-label="Previous Image">
+                    &#10094;
+                </button>
 
-    <ul>
-        <li>📢 Semester Examination Forms are now available. Last date to apply: 30 August 2026.</li>
-        <li>📚 Library will remain open from 8:00 AM to 8:00 PM during examination period.</li>
-        <li>💻 Registration for Web Development Workshop 2026 is now open.</li>
-        <li>🎓 Scholarship applications for eligible students are invited.</li>
-        <li>🏆 Annual Sports Week registrations begin from 1 September 2026.</li>
-    </ul>
-</section>
+                <button class="slider-btn next" id="nextSlide"
+                        aria-label="Next Image">
+                    &#10095;
+                </button>
 
-<footer>
-    <p>&copy; 2026 StudentHub Portal. All Rights Reserved.</p>
-</footer>
+                <div class="slider-dots" id="sliderDots"></div>
 
-<script src="js/script.js"></script>
+            </div>
+
+
+            <!-- HERO CONTENT -->
+            <div class="hero-content">
+
+                <span class="hero-tag">
+                    🎓 CHARUSAT Student Portal
+                </span>
+
+                <h1>
+                    Welcome to<br>
+                    StudentHub
+                </h1>
+
+                <p>
+                    StudentHub is your one-stop digital campus portal for
+                    attendance, assignments, notices, timetables and academic
+                    activities. Stay connected, organized and updated anytime
+                    through one secure platform.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="register.html" class="btn btn-blue">
+                        Get Started
+                    </a>
+
+                    <!-- Modal Button -->
+                    <button id="learnMoreBtn" class="btn btn-outline">
+                        Learn More
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= UPCOMING EVENTS ================= -->
+        <section class="section">
+
+            <div class="section-title">
+                <h2>Upcoming Events</h2>
+
+                <a href="events.html" class="view-all">
+                    View All &rarr;
+                </a>
+            </div>
+
+
+            <div class="event-cards">
+
+                <!-- Event 1 -->
+                <div class="event-card">
+
+                    <img src="images/event1.jpeg"
+                         alt="Hackathon">
+
+                    <div class="event-info">
+
+                        <h3>Hackathon 2026</h3>
+
+                        <p>
+                            Participate in a 24-hour coding competition
+                            and build innovative solutions.
+                        </p>
+
+                        <span class="event-date">
+                            📅 15 Aug 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 2 -->
+                <div class="event-card">
+
+                    <img src="images/event2.jpeg"
+                         alt="AI Workshop">
+
+                    <div class="event-info">
+
+                        <h3>AI Workshop</h3>
+
+                        <p>
+                            Learn Artificial Intelligence, Machine Learning
+                            and Web Development.
+                        </p>
+
+                        <span class="event-date">
+                            📅 20 Aug 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Event 3 -->
+                <div class="event-card">
+
+                    <img src="images/event3.jpeg"
+                         alt="Cybersecurity Bootcamp">
+
+                    <div class="event-info">
+
+                        <h3>Cybersecurity Bootcamp</h3>
+
+                        <p>
+                            Hands-on training session on ethical hacking,
+                            network security, and data protection.
+                        </p>
+
+                        <span class="event-date">
+                            📅 10 Oct 2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+        <section class="section">
+
+            <h2 class="section-header">
+                Why Choose StudentHub?
+            </h2>
+
+            <div class="feature-grid">
+
+                <!-- Feature 1 -->
+                <div class="feature-card">
+
+                    <div class="icon-box">
+                        📅
+                    </div>
+
+                    <div>
+                        <h3>Timetable</h3>
+
+                        <p>
+                            Easily access your weekly lecture schedule.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+
+                    <div class="icon-box">
+                        📝
+                    </div>
+
+                    <div>
+                        <h3>Assignments</h3>
+
+                        <p>
+                            Track assignments and submission deadlines.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+
+                    <div class="icon-box">
+                        📊
+                    </div>
+
+                    <div>
+                        <h3>Attendance</h3>
+
+                        <p>
+                            View attendance records and academic progress.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+
+                    <div class="icon-box">
+                        📢
+                    </div>
+
+                    <div>
+                        <h3>Notices</h3>
+
+                        <p>
+                            Stay updated with important college announcements.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+        <section class="section faq-section">
+
+            <h2 class="section-header">
+                Frequently Asked Questions
+            </h2>
+
+
+            <!-- FAQ 1 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>What is StudentHub?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        StudentHub is a digital campus portal designed
+                        to help students manage attendance, assignments,
+                        timetables, notices and events from one platform.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 2 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>What can I access through StudentHub?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        You can access attendance, assignments, timetable,
+                        notices, events and profile information.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 3 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>Can I use StudentHub on mobile?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Yes. StudentHub uses a responsive design that
+                        works on desktop, tablet and mobile devices.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- FAQ 4 -->
+            <div class="faq-item">
+
+                <button class="faq-question">
+                    <span>How can I register for StudentHub?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+                        Click the Register button in the navigation bar
+                        or select Get Started from the home page.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= MODAL POPUP ================= -->
+    <div class="modal" id="infoModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close"
+                    id="modalClose"
+                    aria-label="Close Modal">
+                &times;
+            </button>
+
+            <h2>About StudentHub</h2>
+
+            <p>
+                StudentHub is a digital campus portal designed to provide
+                students with easy access to academic information and
+                campus activities.
+            </p>
+
+            <p>
+                Students can manage attendance, assignments, timetable,
+                notices, events and profile information from one platform.
+            </p>
+
+            <button class="btn btn-blue" id="modalOk">
+                Got it
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <h3>StudentHub</h3>
+
+        <p>
+            Your Digital Campus Portal
+        </p>
+
+        <p>
+            &copy; 2026 StudentHub. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>

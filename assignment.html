@@ -1,25 +1,102 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>Assignments</title>
-<link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Assignments</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<h1>Assignments</h1>
+    <!-- HEADER -->
+    <header class="navbar">
 
-<ul>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
 
-<li>HTML Practical 1</li>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html" class="active">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<li>CSS Practical 2</li>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-text">Login</a>
+            <a href="register.html" class="btn-primary-sm">Register</a>
+        </div>
 
-<li>JavaScript Practical 3</li>
+    </header>
 
-</ul>
 
-<a href="dashboard.html">Dashboard</a>
+    <!-- MAIN -->
+    <main class="main-container">
+
+        <div class="page-heading">
+            <h1>Assignments</h1>
+            <p>View your pending and upcoming assignments.</p>
+        </div>
+
+        <section class="content-card">
+
+            <div class="assignment-list">
+
+                <div class="assignment-item">
+                    <div>
+                        <h3>HTML Practical 1</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                    <span class="badge badge-red">Pending</span>
+                </div>
+
+
+                <div class="assignment-item">
+                    <div>
+                        <h3>CSS Practical 2</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                    <span class="badge badge-amber">Due Soon</span>
+                </div>
+
+
+                <div class="assignment-item">
+                    <div>
+                        <h3>JavaScript Practical 3</h3>
+                        <p>Web Development</p>
+                    </div>
+
+                    <span class="badge badge-blue">Upcoming</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>StudentHub</h3>
+        <p>Your Digital Campus Portal</p>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
 
 </body>
+
 </html>

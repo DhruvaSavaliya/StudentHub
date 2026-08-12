@@ -1,36 +1,101 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>Attendance</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Attendance</title>
+
     <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<h1>Attendance</h1>
+    <!-- HEADER -->
+    <header class="navbar">
 
-<table border="1">
+        <div class="logo">
+            <img src="images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
 
-<tr>
-<th>Subject</th>
-<th>Attendance</th>
-</tr>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html" class="active">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<tr>
-<td>Web Development</td>
-<td>92%</td>
-</tr>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-text">Login</a>
+            <a href="register.html" class="btn-primary-sm">Register</a>
+        </div>
 
-<tr>
-<td>Python</td>
-<td>95%</td>
-</tr>
+    </header>
 
-</table>
 
-<br>
+    <!-- MAIN -->
+    <main class="main-container">
 
-<a href="dashboard.html">Dashboard</a>
+        <div class="page-heading">
+            <h1>Attendance</h1>
+            <p>View your subject-wise attendance.</p>
+        </div>
+
+        <section class="content-card">
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <tr>
+                        <th>Subject</th>
+                        <th>Attendance</th>
+                    </tr>
+
+                    <tr>
+                        <td>CN</td>
+                        <td>
+                            <span class="badge badge-green">95%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>OOPJ</td>
+                        <td>
+                            <span class="badge badge-green">90%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DBMS</td>
+                        <td>
+                            <span class="badge badge-green">88%</span>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>StudentHub</h3>
+        <p>Your Digital Campus Portal</p>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>

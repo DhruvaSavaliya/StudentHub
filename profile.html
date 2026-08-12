@@ -2,41 +2,110 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Profile</title>
-<link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Profile</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<header>
+    <!-- HEADER -->
+    <header class="navbar">
 
-<h1>Student Profile</h1>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
 
-</header>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html" class="active">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<main>
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-text">Login</a>
+            <a href="register.html" class="btn-primary-sm">Register</a>
+        </div>
 
-<section>
+    </header>
 
-<h2>Profile Information</h2>
 
-<p>Name :</p>
+    <!-- MAIN -->
+    <main class="main-container">
 
-<p>Enrollment :</p>
+        <div class="page-heading">
+            <h1>Student Profile</h1>
+            <p>View your personal and academic information.</p>
+        </div>
 
-<p>Course :</p>
 
-</section>
+        <section class="content-card">
 
-</main>
+            <div class="profile-header">
 
-<footer>
+                <div class="avatar">
+                    DS
+                </div>
 
-<p>&copy; StudentHub</p>
+                <div>
+                    <h2>Dhruva Savaliya</h2>
+                    <p>Information Technology • Semester 3</p>
+                </div>
 
-</footer>
+            </div>
+
+
+            <div class="info-grid">
+
+                <div class="info-item">
+                    <span class="info-label">Name</span>
+                    <strong>Dhruva Savaliya</strong>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Enrollment</span>
+                    <strong>D26IT107</strong>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Department</span>
+                    <strong>Information Technology</strong>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Email</span>
+                    <strong>D26IT107@email.com</strong>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-label">Semester</span>
+                    <strong>3</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>StudentHub</h3>
+        <p>Your Digital Campus Portal</p>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>

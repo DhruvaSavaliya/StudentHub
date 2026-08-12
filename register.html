@@ -2,48 +2,104 @@
 <html lang="en">
 
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Register</title>
-<link rel="stylesheet" href="CSS/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Register</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-<h1>Student Registration</h1>
-</header>
+    <!-- HEADER -->
+    <header class="navbar">
 
-<main>
+        <div class="logo">
+            <img src="images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
 
-<form>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
 
-<label for="name">Full Name</label>
-<input type="text" id="name">
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-text">Login</a>
+            <a href="register.html" class="btn-primary-sm">Register</a>
+        </div>
 
-<br><br>
+    </header>
 
-<label for="email">Email</label>
-<input type="email" id="email">
 
-<br><br>
+    <!-- REGISTER -->
+    <main class="auth-page">
 
-<label for="password">Password</label>
-<input type="password" id="password">
+        <div class="auth-card">
 
-<br><br>
+            <h1>Student Registration</h1>
 
-<button type="submit">Register</button>
+            <p>Create your StudentHub account.</p>
 
-</form>
+            <form>
 
-</main>
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" class="form-control"
+                        placeholder="Enter your full name">
+                </div>
 
-<footer>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control"
+                        placeholder="Enter your email">
+                </div>
 
-<p>&copy; StudentHub</p>
+                <div class="form-group">
+                    <label>Mobile</label>
+                    <input type="tel" class="form-control"
+                        placeholder="Enter your mobile number">
+                </div>
 
-</footer>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="password" class="form-control"
+                        placeholder="Create a password">
+                </div>
+
+                <button type="submit" class="btn btn-blue">
+                    Register
+                </button>
+
+            </form>
+
+            <div class="auth-footer">
+                Already have an account?
+                <a href="login.html">Login</a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>StudentHub</h3>
+        <p>Your Digital Campus Portal</p>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
 
 </body>
+
 </html>
