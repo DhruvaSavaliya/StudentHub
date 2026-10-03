@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "question": "What is StudentHub?",
+    "answer": "StudentHub is a digital campus portal.",
+    "category": "Portal"
+  },
+  {
+    "id": 2,
+    "question": "How can I register?",
+    "answer": "Open the register page and fill the form.",
+    "category": "Accounts"
+  },
+  {
+    "id": 3,
+    "question": "How can I check attendance?",
+    "answer": "Open the attendance page.",
+    "category": "Academics"
+  },
+  {
+    "id": 4,
+    "question": "Where can I see events?",
+    "answer": "Open the events page.",
+    "category": "Events"
+  },
+  {
+    "id": 5,
+    "question": "Can I search events?",
+    "answer": "Yes, you can search events by title.",
+    "category": "Events"
+  },
+  {
+    "id": 6,
+    "question": "Can events be filtered?",
+    "answer": "Yes, events can be filtered by category.",
+    "category": "Events"
+  },
+  {
+    "id": 7,
+    "question": "Can events be sorted?",
+    "answer": "Yes, events can be sorted by title or date.",
+    "category": "Events"
+  },
+  {
+    "id": 8,
+    "question": "Can I search students?",
+    "answer": "Yes, students can be searched by name or email.",
+    "category": "Accounts"
+  },
+  {
+    "id": 9,
+    "question": "Can students be filtered?",
+    "answer": "Yes, students can be filtered by course.",
+    "category": "Accounts"
+  },
+  {
+    "id": 10,
+    "question": "Can students be sorted?",
+    "answer": "Yes, students can be sorted by name or year.",
+    "category": "Accounts"
+  },
+  {
+    "id": 11,
+    "question": "What is JSON?",
+    "answer": "JSON is used to store and exchange data.",
+    "category": "Technology"
+  },
+  {
+    "id": 12,
+    "question": "What is Fetch API?",
+    "answer": "Fetch API is used to get data from a file or server.",
+    "category": "Technology"
+  },
+  {
+    "id": 13,
+    "question": "What is filter?",
+    "answer": "Filter selects matching elements from an array.",
+    "category": "Technology"
+  },
+  {
+    "id": 14,
+    "question": "What is sort?",
+    "answer": "Sort arranges array elements.",
+    "category": "Technology"
+  },
+  {
+    "id": 15,
+    "question": "What is map?",
+    "answer": "Map creates a new result from each array element.",
+    "category": "Technology"
+  }
+]

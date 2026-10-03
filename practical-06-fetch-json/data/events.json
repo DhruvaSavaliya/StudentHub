@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "title": "Tech Fest",
+        "date": "2026-09-20",
+        "location": "CSPIT",
+        "category": "Technical"
+    },
+    {
+        "id": 2,
+        "title": "Coding Competition",
+        "date": "2026-09-22",
+        "location": "Computer Lab",
+        "category": "Technical"
+    },
+    {
+        "id": 3,
+        "title": "Sports Day",
+        "date": "2026-09-25",
+        "location": "University Ground",
+        "category": "Sports"
+    },
+    {
+        "id": 4,
+        "title": "Cultural Night",
+        "date": "2026-09-28",
+        "location": "Auditorium",
+        "category": "Cultural"
+    },
+    {
+        "id": 5,
+        "title": "Web Workshop",
+        "date": "2026-10-02",
+        "location": "Seminar Hall",
+        "category": "Workshop"
+    },
+    {
+        "id": 6,
+        "title": "AI Seminar",
+        "date": "2026-10-05",
+        "location": "Conference Hall",
+        "category": "Technical"
+    },
+    {
+        "id": 7,
+        "title": "Cricket Tournament",
+        "date": "2026-10-08",
+        "location": "University Ground",
+        "category": "Sports"
+    },
+    {
+        "id": 8,
+        "title": "Dance Competition",
+        "date": "2026-10-10",
+        "location": "Cultural Hall",
+        "category": "Cultural"
+    },
+    {
+        "id": 9,
+        "title": "Cloud Workshop",
+        "date": "2026-10-12",
+        "location": "Seminar Hall",
+        "category": "Workshop"
+    },
+    {
+        "id": 10,
+        "title": "Hackathon",
+        "date": "2026-10-15",
+        "location": "Innovation Lab",
+        "category": "Technical"
+    },
+    {
+        "id": 11,
+        "title": "Football Tournament",
+        "date": "2026-10-18",
+        "location": "University Ground",
+        "category": "Sports"
+    },
+    {
+        "id": 12,
+        "title": "Photography Contest",
+        "date": "2026-10-20",
+        "location": "Student Center",
+        "category": "Cultural"
+    },
+    {
+        "id": 13,
+        "title": "Cyber Security Seminar",
+        "date": "2026-10-22",
+        "location": "Seminar Hall",
+        "category": "Technical"
+    },
+    {
+        "id": 14,
+        "title": "Python Workshop",
+        "date": "2026-10-25",
+        "location": "Computer Lab",
+        "category": "Workshop"
+    },
+    {
+        "id": 15,
+        "title": "Chess Championship",
+        "date": "2026-10-28",
+        "location": "Sports Hall",
+        "category": "Sports"
+    }
+]

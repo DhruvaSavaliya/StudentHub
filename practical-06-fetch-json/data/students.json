@@ -1,0 +1,107 @@
+[
+    {
+        "id": 1,
+        "name": "Dhruva Savaliya",
+        "email": "dhruva@example.com",
+        "course": "Information Technology",
+        "year": 2
+    },
+    {
+        "id": 2,
+        "name": "Rahul Patel",
+        "email": "rahul@example.com",
+        "course": "Computer Engineering",
+        "year": 2
+    },
+    {
+        "id": 3,
+        "name": "Amit Shah",
+        "email": "amit@example.com",
+        "course": "Computer Science",
+        "year": 3
+    },
+    {
+        "id": 4,
+        "name": "Neha Mehta",
+        "email": "neha@example.com",
+        "course": "Information Technology",
+        "year": 2
+    },
+    {
+        "id": 5,
+        "name": "Priya Patel",
+        "email": "priya@example.com",
+        "course": "Computer Science",
+        "year": 3
+    },
+    {
+        "id": 6,
+        "name": "Karan Desai",
+        "email": "karan@example.com",
+        "course": "Computer Engineering",
+        "year": 4
+    },
+    {
+        "id": 7,
+        "name": "Riya Shah",
+        "email": "riya@example.com",
+        "course": "Information Technology",
+        "year": 3
+    },
+    {
+        "id": 8,
+        "name": "Jay Patel",
+        "email": "jay@example.com",
+        "course": "Computer Engineering",
+        "year": 2
+    },
+    {
+        "id": 9,
+        "name": "Het Shah",
+        "email": "het@example.com",
+        "course": "Computer Science",
+        "year": 4
+    },
+    {
+        "id": 10,
+        "name": "Mansi Patel",
+        "email": "mansi@example.com",
+        "course": "Information Technology",
+        "year": 3
+    },
+    {
+        "id": 11,
+        "name": "Yash Mehta",
+        "email": "yash@example.com",
+        "course": "Computer Engineering",
+        "year": 4
+    },
+    {
+        "id": 12,
+        "name": "Krisha Shah",
+        "email": "krisha@example.com",
+        "course": "Computer Science",
+        "year": 2
+    },
+    {
+        "id": 13,
+        "name": "Dev Patel",
+        "email": "dev@example.com",
+        "course": "Information Technology",
+        "year": 4
+    },
+    {
+        "id": 14,
+        "name": "Nisarg Desai",
+        "email": "nisarg@example.com",
+        "course": "Computer Engineering",
+        "year": 3
+    },
+    {
+        "id": 15,
+        "name": "Aarav Shah",
+        "email": "aarav@example.com",
+        "course": "Computer Science",
+        "year": 2
+    }
+]
