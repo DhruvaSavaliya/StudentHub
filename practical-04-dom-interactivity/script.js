@@ -46,9 +46,9 @@
   if (image) {
     const slides = [
       { src: "../../assets/images/charusat.png", alt: "CHARUSAT campus" },
-      { src: "../../assets/images/event1.jpeg", alt: "A StudentHub campus event" },
-      { src: "../../assets/images/event2.jpeg", alt: "Students taking part in a campus event" },
-      { src: "../../assets/images/event3.jpeg", alt: "A university cultural event" }
+      { src: "../../assets/images/charusat1.jpeg", alt: "A StudentHub campus event" },
+      { src: "../../assets/images/charusat2.jpeg", alt: "Students taking part in a campus event" },
+      { src: "../../assets/images/charusat3.jpeg", alt: "A university cultural event" }
     ];
     const dots = document.querySelector("#sliderDots");
     let active = 0;
