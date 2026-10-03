@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub | Login</title>
+
+    <link rel="stylesheet" href="../../practical-03-responsive-css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="../../assets/images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-text">Login</a>
+            <a href="register.html" class="btn-primary-sm">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- LOGIN -->
+    <main class="auth-page">
+
+        <div class="auth-card">
+
+            <h1>Student Login</h1>
+
+            <p>Login to access your StudentHub account.</p>
+
+            <form>
+
+                <div class="form-group">
+                    <label for="loginEmail">Email</label>
+                    <input id="loginEmail" name="email" type="email" autocomplete="email" required class="form-control" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input id="loginPassword" name="password" type="password" autocomplete="current-password" required class="form-control" placeholder="Enter your password">
+                </div>
+
+                <button type="submit" class="btn btn-blue">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="auth-footer">
+                Don't have an account?
+                <a href="register.html">Register</a>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>StudentHub</h3>
+        <p>Your Digital Campus Portal</p>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+<script src="../../practical-04-dom-interactivity/script.js" defer></script></body>
+
+</html>

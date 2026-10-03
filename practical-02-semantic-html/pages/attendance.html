@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentHub | Attendance</title>
+
+    <link rel="stylesheet" href="../../practical-03-responsive-css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="navbar">
+
+        <div class="logo">
+            <img src="../../assets/images/logo.jpg" alt="StudentHub Logo">
+            <h2>Student<span>Hub</span></h2>
+        </div>
+
+        <button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="profile.html">Profile</a>
+            <a href="attendance.html" class="active">Attendance</a>
+            <a href="timetable.html">Timetable</a>
+            <a href="assignment.html">Assignment</a>
+            <a href="notice.html">Notice</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <a href="login.html" class="btn-text">Login</a>
+            <a href="register.html" class="btn-primary-sm">Register</a>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main class="main-container">
+
+        <div class="page-heading">
+            <h1>Attendance</h1>
+            <p>View your subject-wise attendance.</p>
+        </div>
+
+        <section class="content-card">
+
+            <div class="table-wrap">
+
+                <table>
+
+                    <tr>
+                        <th>Subject</th>
+                        <th>Attendance</th>
+                    </tr>
+
+                    <tr>
+                        <td>CN</td>
+                        <td>
+                            <span class="badge badge-green">95%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>OOPJ</td>
+                        <td>
+                            <span class="badge badge-green">90%</span>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>DBMS</td>
+                        <td>
+                            <span class="badge badge-green">88%</span>
+                        </td>
+                    </tr>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <h3>StudentHub</h3>
+        <p>Your Digital Campus Portal</p>
+        <p>&copy; 2026 StudentHub. All Rights Reserved.</p>
+    </footer>
+
+<script src="../../practical-04-dom-interactivity/script.js" defer></script></body>
+</html>

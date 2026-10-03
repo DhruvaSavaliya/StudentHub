@@ -1209,4 +1209,294 @@ footer {
     .modal-content {
         padding: 25px 20px;
     }
+
+    /* =========================================================
+   PRACTICAL 6 - JSON DATA PAGES
+   ========================================================= */
+
+.data-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.data-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.data-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.data-header p {
+    color: var(--gray);
+}
+
+
+/* ===== SEARCH / FILTER / SORT ===== */
+
+.data-controls {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.data-controls .form-control {
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* ===== DATA CARDS ===== */
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.data-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.data-card h3 {
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.data-card p {
+    color: var(--gray);
+    margin-bottom: 6px;
+}
+
+.data-card strong {
+    color: var(--text);
+}
+
+
+/* ===== STATUS ===== */
+
+.data-status {
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+
+/* ===== EMPTY RESULT ===== */
+
+.no-result {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: var(--gray);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+
+/* ===== FAQ DATA CARDS ===== */
+
+.data-card h3 {
+    color: var(--text);
+    margin-bottom: 10px;
+}
+
+.data-card p {
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRACTICAL 6 - JSON DATA PAGES
+   ========================================================= */
+
+   .data-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.data-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.data-header h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.data-header p {
+    color: var(--gray);
+}
+
+
+/* ===== SEARCH, FILTER AND SORT ===== */
+
+.data-controls {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.data-controls .form-control {
+    background: var(--white);
+    color: var(--text);
+}
+
+
+/* ===== STATUS ===== */
+
+.data-status {
+    text-align: center;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+
+/* ===== DATA GRID ===== */
+
+.data-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* ===== DATA CARD ===== */
+
+.data-card {
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 22px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.data-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.data-card h3 {
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.data-card p {
+    color: var(--gray);
+    margin-bottom: 6px;
+}
+
+.data-card strong {
+    color: var(--text);
+}
+
+
+/* ===== FAQ ===== */
+
+.faq-data-card p {
+    line-height: 1.7;
+}
+
+
+/* ===== NO RESULT ===== */
+
+.no-result {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: var(--gray);
+    background: var(--white);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+}
+
+
+/* =========================================================
+   PRACTICAL 6 RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .data-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .data-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .search-control {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .data-page {
+        padding: 30px 15px;
+    }
+
+    .data-header h1 {
+        font-size: 27px;
+    }
+
+    .data-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .search-control {
+        grid-column: auto;
+    }
+
+    .data-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+}
+/* Practical 6 data controls and Practical 5 accessible feedback */
+.data-controls .form-group { display: grid; gap: 0.45rem; }
+.data-card h2 { margin: 0 0 0.65rem; font-size: 1.18rem; }
+.results-summary { margin: 1rem 0; color: var(--text-secondary, #52606d); }
+.pagination { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; padding: 1.5rem 0; }
+.page-button { min-width: 2.6rem; min-height: 2.6rem; padding: 0.45rem 0.7rem; border: 1px solid #c8d2e0; border-radius: 0.45rem; background: #fff; color: #172b4d; cursor: pointer; }
+.page-button:hover:not(:disabled), .page-button[aria-current="page"] { background: #1769aa; border-color: #1769aa; color: #fff; }
+.page-button:disabled { opacity: 0.52; cursor: not-allowed; }
+.field-error { min-height: 1.15em; margin: 0.2rem 0 0; color: #a52222; font-size: 0.9rem; }
+.form-hint { margin: 0.2rem 0 0; color: #52606d; font-size: 0.9rem; }
+[aria-invalid="true"] { outline: 2px solid #a52222; outline-offset: 2px; }
+.terms-row, .choice-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.8rem; }
+.terms-row input, .choice-row input { width: auto; }
+fieldset.form-group { min-width: 0; border: 0; padding: 0; }
+fieldset legend { margin-bottom: 0.55rem; font-weight: 600; }
+.data-status[data-state="error"] { color: #a52222; }
+.data-status[data-state="warning"] { color: #7b5100; }
+.data-status[data-state="success"] { color: #176336; }
+#main-content { scroll-margin-top: 1rem; }
+:focus-visible { outline: 3px solid #e18b00; outline-offset: 3px; }
+@media (max-width: 600px) {
+  .data-controls { grid-template-columns: minmax(0, 1fr); }
+  .page-button { min-width: 2.35rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
 }
