@@ -1,1 +1,87 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Browse and search StudentHub frequently asked questions loaded from JSON."><title>StudentHub | Frequently asked questions</title><link rel="stylesheet" href="../../practical-03-responsive-css/style.css"><script src="../js/data-browser.js" defer></script><script src="../../practical-04-dom-interactivity/script.js" defer></script></head><body data-dataset="faq"><header class="navbar"><a class="logo" href="../../practical-02-semantic-html/pages/index.html"><img src="../../assets/images/logo.jpg" alt="StudentHub home"><span>StudentHub</span></a><button class="hamburger" id="hamburger" type="button" aria-label="Open menu" aria-controls="navLinks" aria-expanded="false">☰</button><nav class="nav-links" id="navLinks" aria-label="Main navigation"><a href="../../practical-02-semantic-html/pages/index.html">Home</a><a href="../../practical-02-semantic-html/pages/about.html">About</a><a href="events.html">Events</a><a href="students.html">Students</a><a href="faq.html">FAQ</a><a href="../../practical-02-semantic-html/pages/register.html">Register</a></nav><button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle color theme">🌙</button></header><main class="data-page" id="main-content"><div class="data-header"><span class="data-kicker">Quick help · Frequently asked questions</span><h1>Frequently asked questions</h1><p>Records are fetched from a JSON file and can be searched, filtered, sorted, and paginated.</p></div><form class="data-controls" role="search" onsubmit="return false"><div class="form-group"><label for="search">Search</label><input type="search" id="search" class="form-control search-control" placeholder="Search questions and answers" autocomplete="off"></div><div class="form-group"><label for="filter">Filter by topic</label><select id="filter" class="form-control"><option value="">All topics</option><option>Portal</option><option>Accounts</option><option>Academics</option><option>Events</option><option>Technology</option></select></div><div class="form-group"><label for="sort">Sort by question</label><select id="sort" class="form-control"><option value="question">Question (A–Z)</option></select></div></form><p id="status" class="data-status" role="status" aria-live="polite">Loading frequently asked questions…</p><div id="resultsSummary" class="results-summary"></div><section id="results" class="data-grid" aria-label="Frequently asked questions" aria-live="polite" aria-busy="true"></section><nav id="pagination" class="pagination" aria-label="Frequently asked questions pages"></nav></main><footer><p>StudentHub · Practical 6: Fetch API, JSON, search, filter, sort, pagination</p></footer></body></html>
+```html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Browse and search StudentHub frequently asked questions loaded from JSON.">
+  <title>StudentHub | Frequently asked questions</title>
+  <link rel="stylesheet" href="../../practical-03-responsive-css/style.css">
+  <script src="../js/data-browser.js" defer></script>
+  <script src="../../practical-04-dom-interactivity/script.js" defer></script>
+</head>
+
+<body data-dataset="faq">
+  <header class="navbar">
+    <a class="logo" href="../../practical-02-semantic-html/pages/index.html">
+      <img src="../../assets/images/logo.jpg" alt="StudentHub home">
+      <span>StudentHub</span>
+    </a>
+
+    <button class="hamburger" id="hamburger" type="button" aria-label="Open menu"
+      aria-controls="navLinks" aria-expanded="false">☰</button>
+
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+      <a href="../../practical-02-semantic-html/pages/index.html">Home</a>
+      <a href="../../practical-02-semantic-html/pages/about.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="students.html">Students</a>
+      <a href="faq.html">FAQ</a>
+      <a href="../../practical-02-semantic-html/pages/register.html">Register</a>
+    </nav>
+
+    <button class="theme-btn" id="themeToggle" type="button" aria-label="Toggle color theme">🌙</button>
+  </header>
+
+  <main class="data-page" id="main-content">
+    <div class="data-header">
+      <span class="data-kicker">Quick help · Frequently asked questions</span>
+      <h1>Frequently asked questions</h1>
+      <p>Records are fetched from a JSON file and can be searched, filtered, sorted, and paginated.</p>
+    </div>
+
+    <form class="data-controls" role="search" onsubmit="return false">
+      <div class="form-group">
+        <label for="search">Search</label>
+        <input type="search" id="search" class="form-control search-control"
+          placeholder="Search questions and answers" autocomplete="off">
+      </div>
+
+      <div class="form-group">
+        <label for="filter">Filter by topic</label>
+        <select id="filter" class="form-control">
+          <option value="">All topics</option>
+          <option>Portal</option>
+          <option>Accounts</option>
+          <option>Academics</option>
+          <option>Events</option>
+          <option>Technology</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sort">Sort by question</label>
+        <select id="sort" class="form-control">
+          <option value="question">Question (A–Z)</option>
+        </select>
+      </div>
+    </form>
+
+    <p id="status" class="data-status" role="status" aria-live="polite">
+      Loading frequently asked questions…
+    </p>
+
+    <div id="resultsSummary" class="results-summary"></div>
+
+    <section id="results" class="data-grid" aria-label="Frequently asked questions"
+      aria-live="polite" aria-busy="true"></section>
+
+    <nav id="pagination" class="pagination" aria-label="Frequently asked questions pages"></nav>
+  </main>
+
+  <footer>
+    <p>StudentHub · Practical 6: Fetch API, JSON, search, filter, sort, pagination</p>
+  </footer>
+</body>
+</html>
+```
