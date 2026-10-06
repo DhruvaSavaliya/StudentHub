@@ -1,0 +1,12 @@
+[
+  {
+    "submitted_at": "2026-10-04T00:00:00+00:00",
+    "name": "Sample Student",
+    "email": "sample.student@example.edu",
+    "mobile": "+91 98765 43210",
+    "course": "Information Technology",
+    "year": 3,
+    "gender": "Prefer not to say"
+  }
+]
+
