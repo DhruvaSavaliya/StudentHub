@@ -87,7 +87,7 @@ $noticeClass = ($notice['type'] ?? '') === 'success' ? 'notice success' : 'notic
         <a href="../practical-06-fetch-json/pages/faq.html">FAQ</a>
     </nav>
     <div class="auth-buttons">
-        <a href="../practical-02-semantic-html/pages/login.html" class="btn btn-primary">Login</a>
+        <a href="../practical-10-secure-auth/" class="btn btn-primary">Login</a>
         <a href="index.php" class="btn btn-primary" aria-current="page">Register</a>
         <button id="themeToggle" class="theme-btn" type="button" aria-label="Switch to dark theme" aria-pressed="false" title="Toggle theme">🌙</button>
     </div>
