@@ -2,8 +2,9 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../practical-10-secure-auth/lib/auth.php';
+require __DIR__ . '/../practical-14-admin-dashboard/lib/dashboard.php';
 require __DIR__ . '/lib/students.php';
-authRequireRole('admin');
+$admin = authRequireRole('admin');
 $db = studentHubMysqli();
 $courses = p11Courses($db);
 $values = ['student_code' => '', 'first_name' => '', 'last_name' => '', 'email' => '', 'mobile' => '', 'course_id' => 0, 'year_of_study' => 0];
@@ -20,6 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if ($errors === []) {
             try {
                 p11InsertStudent($db, $values);
+                p14LogAction($db, (int) $admin['id'], 'student.created', 'student', (int) $db->insert_id, 'Created a student record');
                 p11SetFlash('success', 'Student record added successfully.');
                 header('Location: index.php', true, 303);
                 exit;

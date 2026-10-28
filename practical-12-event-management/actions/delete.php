@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../../practical-10-secure-auth/lib/auth.php';
+require __DIR__ . '/../../practical-14-admin-dashboard/lib/dashboard.php';
 require __DIR__ . '/../lib/events.php';
 $admin = authRequireRole('admin');
 
@@ -49,6 +50,7 @@ try {
     $delete->execute();
     $delete->close();
     $db->commit();
+    p14LogAction($db, (int) $admin['id'], 'event.deleted', 'event', $id, 'Deleted an event');
     p12RemovePoster($event['poster_filename']);
     p12SetFlash('success', 'Event deleted successfully.');
 } catch (Throwable $exception) {

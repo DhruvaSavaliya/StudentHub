@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../../practical-10-secure-auth/lib/auth.php';
+require __DIR__ . '/../../practical-14-admin-dashboard/lib/dashboard.php';
 require __DIR__ . '/../../practical-12-event-management/lib/events.php';
 
 header('Content-Type: application/json; charset=utf-8');
@@ -66,6 +67,7 @@ try {
                 $statement->close();
                 p12Audit($db, $id, $values['title'], 'created', (int) $admin['id']);
                 $db->commit();
+                p14LogAction($db, (int) $admin['id'], 'event.created', 'event', $id, 'Created an event through the JSON API');
                 p13Respond(201, ['ok' => true, 'message' => 'Event added successfully.', 'id' => $id]);
             } catch (Throwable $exception) {
                 $db->rollback();
@@ -90,6 +92,7 @@ try {
             $statement->close();
             p12Audit($db, $eventId, $values['title'], 'updated', (int) $admin['id']);
             $db->commit();
+            p14LogAction($db, (int) $admin['id'], 'event.updated', 'event', $eventId, 'Updated an event through the JSON API');
             p13Respond(200, ['ok' => true, 'message' => 'Event updated successfully.']);
         } catch (Throwable $exception) {
             $db->rollback();
@@ -123,6 +126,7 @@ try {
         $statement->close();
         p12Audit($db, null, (string) $event['title'], 'deleted', (int) $admin['id']);
         $db->commit();
+        p14LogAction($db, (int) $admin['id'], 'event.deleted', 'event', $eventId, 'Deleted an event through the JSON API');
         p13Respond(200, ['ok' => true, 'message' => 'Event deleted successfully.']);
     } catch (Throwable $exception) {
         $db->rollback();

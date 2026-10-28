@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../practical-10-secure-auth/lib/auth.php';
+require __DIR__ . '/../practical-14-admin-dashboard/lib/dashboard.php';
 require __DIR__ . '/lib/events.php';
 $admin = authRequireRole('admin');
 $db = studentHubMysqli();
@@ -69,6 +70,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 $statement->close();
                 p12Audit($db, $id, $values['title'], 'updated', (int) $admin['id']);
                 $db->commit();
+                p14LogAction($db, (int) $admin['id'], 'event.updated', 'event', $id, 'Updated an event');
                 if ($replacingPoster) {
                     p12RemovePoster($currentPoster);
                 }

@@ -44,6 +44,8 @@ try {
     <div class="auth-detail"><span>Last successful login</span><strong><?= authEscape($lastLogin) ?></strong></div>
     <div class="notice success" role="status">Admin access is restricted to accounts with the admin role.</div>
     <a class="btn btn-blue" href="../../practical-11-student-management/">Manage students</a>
+    <a class="btn btn-blue" href="../../practical-12-event-management/">Manage events</a>
+    <a class="btn btn-blue" href="../../practical-14-admin-dashboard/">Admin overview</a>
     <a class="btn btn-blue" href="../../practical-02-semantic-html/pages/index.html">Return to StudentHub</a>
 </main>
 <footer class="site-footer">StudentHub · Admin dashboard</footer>

@@ -2,8 +2,9 @@
 declare(strict_types=1);
 
 require __DIR__ . '/../../practical-10-secure-auth/lib/auth.php';
+require __DIR__ . '/../../practical-14-admin-dashboard/lib/dashboard.php';
 require __DIR__ . '/../lib/students.php';
-authRequireRole('admin');
+$admin = authRequireRole('admin');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
@@ -24,7 +25,12 @@ if ($id === false || $id === null || $id < 1 || !in_array($status, ['active', 'i
 }
 
 try {
-    $changed = p11SetStudentStatus(studentHubMysqli(), $id, $status);
+    $db = studentHubMysqli();
+    $changed = p11SetStudentStatus($db, $id, $status);
+    if ($changed) {
+        $action = $status === 'inactive' ? 'student.archived' : 'student.restored';
+        p14LogAction($db, (int) $admin['id'], $action, 'student', $id, 'Changed student record status');
+    }
     p11SetFlash($changed ? 'success' : 'error', $changed
         ? ($status === 'inactive' ? 'Student archived successfully.' : 'Student restored successfully.')
         : 'The student record was not changed.');
