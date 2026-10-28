@@ -265,7 +265,7 @@ function authRequireRole(string $role): array
     authInitialize();
     $user = authCurrentUser();
     if ($user === null) {
-        header('Location: ../login.php', true, 303);
+        header('Location: ' . AUTH_BASE_PATH . 'login.php', true, 303);
         exit;
     }
     if ($user['role'] !== $role) {
